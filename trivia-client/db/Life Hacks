@@ -1,0 +1,117 @@
+db.questions.insertMany ([
+	{
+		question:"Which of the following is always in a TITA BAG? ",
+		type:"MC",
+		difficulty:"E",
+		category:"Tita Life",
+		choices:["A. Earphones","B. Wet wipes","C. Notebook","D. Laptop"],
+		answer: "B. Wet Wipes"
+	},
+	{
+		question:"__________ the best medicine for everything, it's a mentholated ointment na really works for sipon and ubo",
+		type:"MC",
+		difficulty:"E",
+		category:"Tita Life",
+		choices:["A. Sebo de Macho","B. Vicks Vaporub","C. Paracetamol","D. Vaseline"],
+		answer:"B. Vicks Vaporub"
+	},
+	{
+		question:"Every tita loves Zumba (TRUE/FALSE)",
+		type:"TF",
+		difficulty:"E",
+		category:"Tita Life",
+		answer:"True"
+	},
+	{
+		question:"TITA BAG always have payong inside.(TRUE/FALSE)",
+		type:"TF",
+		difficulty:"E",
+		category:"Tita Life",
+		answer:"True"
+	},
+	{
+		question:"The usual tita profile picture",
+		type:"MC",
+		difficulty:"E",
+		category:"Tita Life",
+		choices:["A. Selfie","B. Car","C. Children","D. Cartoon"],
+		answer:"C. Children"
+	},
+	{
+		question:"The best medicine for our peklat.",
+		type:"MC",
+		difficulty:"A",
+		category:"Tita Life",
+		choices:["A. Vaseline","B. Vicks Vaporub","C. Sebo de Macho","D. Efficascent Oil"],
+		answer:"C. Sebo de Macho"
+	},
+	{
+		question:"Tita would prefer tote bags over backpack (TRUE/FALSE)",
+		type:"TF",
+		difficulty:"A",
+		category:"Tita Life",
+		answer:"True"
+	},
+	{
+		question:"What department store section is our happy place?",
+		type:"MC",
+		difficulty:"A",
+		category:"Tita Life",
+		choices:["A. Clothes section","B. Home Appliance section","C. Toy section","D. Art section"],
+		answer:"B. Home Appliance section"
+	},
+	{
+		question:"Soap Operas is life. (TRUE/FALSE)",
+		type:"TF",
+		difficulty:"A",
+		category:"Tita Life",
+		answer:"True"
+	},
+	{
+		question:"What do Titas wear when going to a cold place?",
+		type:"MC",
+		difficulty:"A",
+		category:"Tita Life",
+		choices:["A. Sweater","B. Hoodie","C. Scarf","D. None"],
+		answer:"C. Scarf"
+	},
+	{
+		question:"What tea do tita's usually drink when they ate too much food",
+		type:"MC",
+		difficulty:"H",
+		category:"Tita Life",
+		choices:["A. Black Tea","B. Iced Tea","C. Jasmine Tea","D. Green Tea"],
+		answer:"D. Green Tea"
+	},
+	{
+		question:"Most titas usually steal tissue from coffee shops and restaurants (TRUE/FALSE)",
+		type:"TF",
+		difficulty:"H",
+		category:"Tita Life",
+		answer:"True"
+	},
+	{
+		question:"The usual go to restaurant of every tita.",
+		type:"MC",
+		difficulty:"H",
+		category:"Tita Life",
+		choices:["A. Mcdonalds","B. Mary Grace","C. Max's","D. Chowking"],
+		answer:"B. Mary Grace"
+	},
+	{
+		question:"Where would a tita be more excited? ",
+		type:"MC",
+		difficulty:"H",
+		category:"Tita Life",
+		choices:["A. 3-day Sale","B. Recognition Day","C. Her Birthday Party","D. Bimb's Birthday"],
+		answer:"A. 3-day Sale"
+	},
+	{
+		question:"Which of the following would a tita most likely bring as a gift?",
+		type:"MC",
+		difficulty:"H",
+		category:"Tita Life",
+		choices:["A. Clothes","B. Cash","C. Chocolates","D. Shoes"],
+		answer:"B. Cash"
+	}
+])

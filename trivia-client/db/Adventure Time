@@ -1,0 +1,113 @@
+db.questions.insertMany ([
+	{
+		question:"Ang init sa Manila, let's go sa ____________ and buy walis na din.",
+		type:"TA",
+		difficulty:"E",
+		category:"Adventure Time",
+		answer:"Baguio"
+	},
+	{
+		question:"Need natin magpa-tan ng skin, and new Instagram photo with the white sand beach, where in Aklan to?",
+		type:"TA",
+		difficulty:"E",
+		category:"Adventure Time",
+		answer:"Boracay"
+	},
+	{
+		question:"Bimb saan ulit makikita ang Taal?",
+		type:"MC",
+		difficulty:"E",
+		category:"Adventure Time",
+		choices:["A. Cebu","B. Davao","C. Legazpi","D. Batangas"],
+		answer:"D. Batangas"
+	},
+	{
+		question:"Lipat na tayo sa __________ since siya safest place sa Philippines and masarap durian",
+		type:"TA",
+		difficulty:"E",
+		category:"Adventure Time",
+		answer:"Davao"
+	},
+	{
+		question:"True ba na over 7,000 islands meron ang Pilipinas? (TRUE/FALSE)",
+		type:"TF",
+		difficulty:"E",
+		category:"Adventure Time",
+		answer:"True"
+	},
+	{
+		question:"Shopping tayo ng quality cheap clothes sa ____________, known siya as Garments & Woodworks Capital of the Philippines",
+		type:"MC",
+		difficulty:"A",
+		category:"Adventure Time",
+		choices:["A. Divisoria","B. Taytay","C. Greenhills","D. Recto"],
+		answer:"B. Taytay"
+	},
+	{
+		question:"Need ko magdiet and eat fresh vegetables, saan ba yung The Salad Bowl of the Philippines?" ,
+		type:"TA",
+		difficulty:"A",
+		category:"Adventure Time",
+		answer:"Benguet"
+	},
+	{
+		question:"Mars true ba na Agusan ang longest river sa Philippines? (TRUE/FALSE)",
+		type:"TF",
+		difficulty:"A",
+		category:"Adventure Time",
+		answer:"True"
+	},
+	{
+		question:"Need to go to _____________, since smallest province and wala masyadong tao so peaceful",
+		type:"MC",
+		difficulty:"A",
+		category:"Adventure Time",
+		choices:["A. Batanes","B. Sulu", "C. Jolo", "D. Tawi-tawi"],
+		answer:"A. Batanes"
+	},
+	{
+		question:"True ba na Cagayan de Oro is the city of friendship? (TRUE/FALSE)",
+		type:"TF",
+		difficulty:"A",
+		category:"Adventure Time",
+		answer:"True"
+	},
+	{
+		question:"Where do we buy quality marbles here in the Philippines?",
+		type:"MC",
+		difficulty:"H",
+		category:"Adventure Time",
+		choice:["A. Masbate","B. Romblon","C. Panay","D. Marinduque"],
+		answer:"A. Romblon"
+	},
+	{
+		question:"Alam mo ba na ______________ is the oldest city in the Philippines",
+		type:"TA",
+		difficulty:"H",
+		category:"Adventure Time",
+		answer:"Cebu"
+	},
+	{
+		question:"Where ba ang major manufacturer of sugar here sa Pinas?",
+		type:"MC",
+		difficulty:"H",
+		category:"Adventure Time",
+		choice:["A. Aklan","B. Bacolod","C. Iloilo","D. Panay"],
+		answer:"B. Bacolod"
+	},
+	{
+		question:"I didn't know na Tawi-tawi is near Sabah, Malaysa (TRUE/FALSE)",
+		type:"TF",
+		difficulty:"H",
+		category:"Adventure Time",
+		answer:"True"
+	},
+	{
+		question:"Anong name nung place na pinagawa ni kumareng Imelda for the visit of Pope John Paul II?",
+		type:"MC",
+		difficulty:"H",
+		category:"Adventure Time",
+		choices:["A. The Sampaguita Palace","B. Marble Palace", "C. The Coconut Palace","D. Heart Palace"],
+		answer:"C. The Coconut Palace"
+	}
+])
