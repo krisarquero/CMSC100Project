@@ -1,0 +1,20 @@
+.manageContent{
+	width:1000px;
+	height: 500px;
+	background-color: #000;
+	padding: 0;
+	position:absolute; /*it can be fixed too*/
+    left:0; right:0;
+    top:0; bottom:0;
+    margin:auto;
+
+        
+    max-width:100%;
+    max-height:100%;
+    overflow:auto;
+}
+
+#title{
+	color: #fff;
+	text-align: center;
+}
