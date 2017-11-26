@@ -12,10 +12,10 @@ class AddMCQuestion extends Component {
 
   state = {
     category: '',
-    type: '',
+    type: 'MC',
     question: '',
     answer: '',
-    difficulty: 'A',
+    difficulty: '',
 		choices: [],
 		optionA: '',
 		optionB: '',
@@ -77,7 +77,7 @@ class AddMCQuestion extends Component {
 	          </Form.Group>
 	          <Form.Group>
 	          	<Form.Input label="Category" placeholder='Category' name='category' value={category} onChange={this.handleChange} />
-	          	<Form.Input label="Type" placeholder='Type' name='type' value={type} onChange={this.handleChange} />
+	          	<Form.Input label="Type" placeholder='Type' name='type' value="Multiple Choice" disabled/>
 	          </Form.Group>
 	          <Form.Input label="Question" placeholder='Question' name='question' value={question} onChange={this.handleChange} />
 				 <Form.Group widths='equal'>

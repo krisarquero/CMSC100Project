@@ -12,10 +12,10 @@ class AddTFQuestion extends Component {
 
   state = {
     category: '',
-    type: '',
+    type: 'TF',
     question: '',
     answer: '',
-    difficulty: 'A'
+    difficulty: ''
   }
 
   handleChange = (e, { name, value }) => this.setState({ [name]: value })
@@ -64,7 +64,7 @@ class AddTFQuestion extends Component {
 	          </Form.Group>
 	          <Form.Group widths="equal">
 	          		<Form.Input label="Category" placeholder='Category' name='category' value={category} onChange={this.handleChange} />
-	            	<Form.Input label="Type" placeholder='Type' name='type' value={type} onChange={this.handleChange} />
+	            	<Form.Input label="Type" placeholder='Type' name='type' value="True or False" disabled />
 	          </Form.Group>
 	          <Form.Input label="Question" placeholder='Question' name='question' value={question} onChange={this.handleChange} />
              <Form.Field>
