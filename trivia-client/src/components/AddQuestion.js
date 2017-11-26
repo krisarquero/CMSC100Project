@@ -3,41 +3,48 @@ import {
 		Form,
     Radio
 } from "semantic-ui-react";
+const request = require('request');
 
 class AddQuestion extends Component {
 
   state = {
-    category: '',
-    type: '',
     question: '',
-    answer: '',
+    type: '',
     difficulty: '',
-    submittedCategory: '',
-    submittedType: '',
-    submittedQuestion: '',
-    submittedAnswer: '',
-    submittedDifficulty: ''
+    category: '',
+    choices: [],
+    answer: ''
+    // submittedCategory: '',
+    // submittedType: '',
+    // submittedQuestion: '',
+    // submittedAnswer: '',
+    // submittedDifficulty: ''
   }
 
   handleChange = (e, { name, value }) => this.setState({ [name]: value })
 
-  handleSubmit = () => {
-    const { category, type, question, answer, difficulty } = this.state
-
-    this.setState({
-      submittedCategory: category,
-      submittedType: type,
-      submittedQuestion: question,
-      submittedAnswer: answer,
-      submittedDifficulty: difficulty
-    })
+  handleSubmit = (e) => {
+    // const { category, type, question, answer, difficulty } = this.state
+    //
+    // this.setState({
+    //   submittedCategory: category,
+    //   submittedType: type,
+    //   submittedQuestion: question,
+    //   submittedAnswer: answer,
+    //   submittedDifficulty: difficulty
+    // })
+    request.post('http://localhost:3001/trivia/add',{ form: e },(error, response, body) => { // change the one in request.body.<something> change this
+			console.log(e);
+			console.log(body);
+			console.log("Here");
+		});
   }
 
 	render(){
     const { category, type, question, answer, difficulty, submittedCategory, submittedType, submittedQuestion, submittedAnswer, submittedDifficulty} = this.state
 		return(
       <div className="App-main">
-        <Form onSubmit={this.handleSubmit}>
+        <Form onSubmit={() => this.handleSubmit(this.state)}>
           <Form.Group>
             <Form.Input placeholder='Category' name='category' value={category} onChange={this.handleChange} />
             <Form.Input placeholder='Type' name='type' value={type} onChange={this.handleChange} />

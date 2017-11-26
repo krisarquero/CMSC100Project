@@ -6,6 +6,7 @@ const QuestionSchema = new Schema({
   category: { type: String, default: '' },
   difficulty: { type: String, default: '' },
   type: { type: String, default: '' },
+  answer: { type: String, default: '' },
   choices: [String]
 });
 

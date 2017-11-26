@@ -27,7 +27,7 @@ require('./models/index');
 
 // Setup Routes
 const QuestionRouter = require('./routes/question-router');
-app.use('/api', QuestionRouter);
+app.use('/trivia', QuestionRouter);
 
 // Homepage message
 app.get('/', (req, res) => {
@@ -38,4 +38,3 @@ app.listen(3001, (err) => {
   if (err) { console.log(err); }
   else { console.log('\nTrivia server is running at http://localhost:3001'); }
 });
-
