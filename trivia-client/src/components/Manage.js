@@ -33,7 +33,9 @@ class Manage extends Component {
 			console.log(e);
 			console.log(body);
 			console.log("Here");
+			window.location.reload();
 		});
+
   }
 
 	render(){

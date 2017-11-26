@@ -14,16 +14,17 @@ class AddNCQuestion extends Component {
     type: '',
     question: '',
     answer: '',
-    difficulty: ''
+    difficulty: 'A'
   }
 
   handleChange = (e, { name, value }) => this.setState({ [name]: value })
 
 	handleSubmit = (e) => {
-    request.post('http://localhost:3001/trivia/questions/`add',{ form: e },(error, response, body) => { // change the one in request.body.<something> change this
+    request.post('http://localhost:3001/trivia/questions/add',{ form: e },(error, response, body) => { // change the one in request.body.<something> change this
 			console.log(e);
 			console.log(body);
 			console.log("Here");
+			window.location.reload();
 		});
   }
 

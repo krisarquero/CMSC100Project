@@ -15,7 +15,7 @@ class AddTFQuestion extends Component {
     type: '',
     question: '',
     answer: '',
-    difficulty: ''
+    difficulty: 'A'
   }
 
   handleChange = (e, { name, value }) => this.setState({ [name]: value })
@@ -25,6 +25,7 @@ class AddTFQuestion extends Component {
 			console.log(e);
 			console.log(body);
 			console.log("Here");
+			window.location.reload();
 		});
   }
 

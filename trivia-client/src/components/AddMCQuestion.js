@@ -15,7 +15,7 @@ class AddMCQuestion extends Component {
     type: '',
     question: '',
     answer: '',
-    difficulty: '',
+    difficulty: 'A',
 		choices: [],
 		optionA: '',
 		optionB: '',
@@ -36,6 +36,7 @@ class AddMCQuestion extends Component {
 			console.log(e);
 			console.log(body);
 			console.log("Here");
+			window.location.reload();
 		});
   }
 
