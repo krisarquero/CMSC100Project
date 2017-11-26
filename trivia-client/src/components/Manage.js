@@ -46,7 +46,7 @@ class Manage extends Component {
 				<Divider inverted horizontal>Or</Divider>
 				<Container textAlign='center'>
 					<Form onSubmit={this.handleSubmit}>
-	 	         	<Form.Input placeholder='Add your own smart Tita category.' name='category' value={category} onChange={this.handleChange} />
+	 	         	<Form.Input className="add-cat" placeholder='Add your own Smart Tita category.' name='category' value={category} onChange={this.handleChange} />
 					 	<Form.Button size='massive' content='Add Category' inverted color='red'/>
 	 	        	</Form>
 				</Container>
