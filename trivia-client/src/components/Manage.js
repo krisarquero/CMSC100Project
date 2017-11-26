@@ -39,17 +39,24 @@ class Manage extends Component {
 		const { category, submittedCategory} = this.state
 		return(
 	      <div className="App-main">
+
 				<Container textAlign='center'>
-					<Button size='massive' name='add-question' onClick={this.handleItemClick} inverted color='red'>Add Question</Button>
-					<Button size='massive' name='view-questions' onClick={this.handleItemClick} inverted color='red'>View Questions</Button>
+					<Button size='huge' name='view-questions' onClick={this.handleItemClick} inverted color='red'>Update Questions</Button>
+				</Container>
+				<Divider inverted horizontal>Or</Divider>
+				<Container textAlign='center'>
+					<Button size='large' name='add-multiple-choice-question' onClick={this.handleItemClick} inverted color='red'>Add Multiple Choice Question</Button>
+					<Button size='large' name='add-no-choices-question' onClick={this.handleItemClick} inverted color='red'>Add Identification Question</Button>
+					<Button size='large' name='add-true-or-false-question' onClick={this.handleItemClick} inverted color='red'>Add True or False Question</Button>
 				</Container>
 				<Divider inverted horizontal>Or</Divider>
 				<Container textAlign='center'>
 					<Form onSubmit={this.handleSubmit}>
-	 	         	<Form.Input className="add-cat" placeholder='Add your own Smart Tita category.' name='category' value={category} onChange={this.handleChange} />
-					 	<Form.Button size='massive' content='Add Category' inverted color='red'/>
+		       	<Form.Input className="add-cat" placeholder='Add your own smart Tita category.' name='category' value={category} onChange={this.handleChange} />
+					 	<Form.Button size='huge' content='Add Category' inverted color='red'/>
 	 	        	</Form>
 				</Container>
+
 	    	</div>
 		)
 	}
