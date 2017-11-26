@@ -1,0 +1,112 @@
+	{
+		question:"Bimb what does this represent MCMXCIX?",
+		type:"NA",
+		difficulty:"E",
+		category:"Sales and Discounts",
+		answer: "1999"
+	},
+	{
+
+		question:"I have 144 friends and each table seats 8 people, so how many tables will I need for my tea party?",
+		type:"NA",
+		difficulty:"E",
+		category:"Sales and Discounts",
+		answer: "18"
+	},
+	{
+		question:"The Cartesian Plane is named after John Cartesian (TRUE/FALSE)",
+		type:"TF",
+		difficulty:"E",
+		category:"Sales and Discounts",
+		answer: "False"
+	},
+	{
+		question:"Jemerlyn has homework and she's asking A * 1/7  = 5/7, what is A?",
+		type:"NA",
+		difficulty:"E",
+		category:"Sales and Discounts",
+		answer: "5"
+	},
+	{
+		question:"-15 is greater than -17, diba?",
+		type:"TF",
+		difficulty:"E",
+		category:"Sales and Discounts",
+		answer: "True"
+	},
+	{
+		question:"I made shopping some gulay in the market and the scale shows 3.256kg. What is this value rounded to the nearest tenth of a kilogram?",
+		type:"MC",
+		difficulty:"A",
+		category:"Sales and Discounts",
+		choices:["A. 3.2kg","B. 3.26kg","C. 3.3kg","D. 3.25kg"],
+		answer: "C. 3.3kg"
+	},
+	{
+		question:" 13 is a composite number according to Bimb. (TRUE/FALSE)",
+		type:"TF",
+		difficulty:"A",
+		category:"Sales and Discounts",
+		answer: "False"
+	},
+	{
+		question:"The bag costs 15,454 and I paid 20,000 how much is my sukli?",
+		type:"NA",
+		difficulty:"A",
+		category:"Sales and Discounts",
+		answer: "4,546"
+	},
+	{
+		question:"I will buy something long for my exchange gift, which is longer 12 inches or 1 foot?",
+		type:"MC",
+		difficulty:"A",
+		category:"Sales and Discounts",
+		choices:["A. 1 foot","B. 12 inches","C. They are equal","D. None of the above"],
+		answer: "C. They are equal"
+	},
+	{
+		question:"Starbucks has a season promo of 20% off for all cold beverages, I bought venti Java Chip which costs 180. How much will I pay?",
+		type:"NA",
+		difficulty:"A",
+		category:"Sales and Discounts",
+		answer: "144"
+	},
+	{
+		question:"Bimb what are the first 5 digits of pi?",
+		type:"NA",
+		difficulty:"H",
+		category:"Sales and Discounts",
+		answer: "3.1415"
+	},
+	{
+		question:" It so traffic in Pinas, I travelled 2 hours and 24 minutes and that is equal to  ____seconds",
+		type:"NA",
+		difficulty:"H",
+		category:"Sales and Discounts",
+		answer: "8640"
+	},
+	{
+		question:"I will buy lipstick sana but I was confused by this discount statement, thirty percent of forty percent is equal to twenty percent of what percent?",
+		type:"MC",
+		difficulty:"H",
+		category:"Sales and Discounts",
+		choices:["A. 40%","B. 60%","C. 70%","D. 30%"],
+		answer: "B. 60%"
+
+	},
+	{
+		question:"2/9 of my friends are beki. If there are 95 more gurls than bekis, how many gurl friends do I have?",
+		type:"NA",
+		difficulty:"H",
+		category:"Sales and Discounts",
+		answer: "133"	
+	},
+	{
+		question:"Jemerlyn what is the common multiple of 8 and 12?",
+		type:"NA",
+		difficulty:"H",
+		category:"Sales and Discounts",
+		answer: "24"
+
+	}
+])

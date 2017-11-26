@@ -1,0 +1,129 @@
+db.questions.insertMany ([
+	{
+		question:"Chika with your kumares about your new bag is what you live for (TRUE/FALSE)",
+		type:"TF",
+		difficulty:"E",
+		category:"Social Climbing 101",
+		answer:"True"
+	},
+	{
+		question:"If you have money what bag do TITAS buy?",
+		type:"MC",
+		difficulty:"E",
+		category:"Social Climbing 101",
+		choices:["A. Jansport", "B. Eco-bag", "C. Louis Vuitton", "D. Heartstrings"],
+		answer:"C. Louis Vuitton"
+	},
+	{
+		question:"Your old phone was made nakaw a while ago, what new phone will you buy?",
+		type:"MC",
+		difficulty:"E",
+		category:"Social Climbing 101",
+		choices:["A. IphoneX", "B. Nokia 3210", "C. Huawei Y5", "D. Oppo F3"],
+		answer:"A. IphoneX"
+	},
+	{
+		question:"You need to hangout with your amigas SM FoodCourt is your go to place. (TRUE/FALSE)",
+		type:"TF",
+		difficulty:"E",
+		category:"Social Climbing 101",
+		answer:"False"
+	},
+	{
+		question:"Bimb is about to go to college na, what school kaya?",
+		type:"TA",
+		difficulty:"E",
+		category:"Social Climbing 101",
+		answer:"Ateneo de Manila"
+	},
+	{
+		question:"I miss my amigas, what coffee shop do we go to?",
+		type:"TA",
+		difficulty:"A",
+		category:"Social Climbing 101",
+		answer:"Starbucks Coffee"
+	},
+	{
+		question:"Bimb is turning 21 na, what gift will I give kaya?",
+		type:"MC",
+		difficulty:"A",
+		category:"Social Climbing 101",
+		choices:["A. Socks","B. Car","C. Rubber Shoes","D. Book"],
+		answer:"B. Car"
+	},
+	{
+		question:"What lipstick brand should I buy?",
+		type:"MC",
+		difficulty:"A",
+		category:"Social Climbing 101",
+		choices:["A. Ever Bilena B","B. Maybelline","C. Nichido","D. Mac"],
+		answer:"D. Mac"
+	},
+	{
+		question:"Hubby needs a new brief na what should I buy?",
+		type:"MC",
+		difficulty:"A",
+		category:"Social Climbing 101",
+		choices:["A. Bench","B. Calvin Klein","C. Hanes","D. Jockey"],
+		answer:"B. Calvin Klein"
+	},
+	{
+		question:"Rolex is the best gift for my hubby. (TRUE/FALSE)",
+		type:"TF",
+		difficulty:"A",
+		category:"Social Climbing 101",
+		answer:"True"
+
+	},
+	{
+		question:"What shoes again yung may shiny red-lacquered soles?",
+		type:"TA",
+		difficulty:"H",
+		category:"Social Climbing 101",
+		answer:"Louboutin"
+	},
+	{
+		question:"What's the true name of kumareng Coco Chanel again?",
+		type:"MC",
+		difficulty:"H",
+		category:"Social Climbing 101",
+		choices:["A. Caroline Chanel","B. Jacob Chanel"."C.Julia Chanel","D. Gabrielle Chanel"],
+		answer:"D. Gabrielle Chanel"
+	},
+	{
+		question:"What LV bag design do titas prefer",
+		type:"MC",
+		difficulty:"H",
+		category:"Social Climbing 101",
+		choices:["A. Speedy Damier", "B. Speed Monogram","C.Speedy 30","Speedy Tote"],
+		answer:"B. Speedy Monogram"
+	},
+	{
+		question:"I need to buy clothes I should prefer Versace over Dior diba?(TRUE/FALSE)",
+		type:"TF",
+		difficulty:"H",
+		category:"Social Climbing 101",
+		answer:"False"
+	},
+	{
+		question:"Who's this Iron Butterfly, I should make friends with her coz she has so many shoes. ",
+		type:"TA",
+		difficulty:"H",
+		category:"Social Climbing 101",
+		answer:"Imelda Marcos"
+	}
+
+])
+
+{
+		question:"",
+		type:"",
+		difficulty:"",
+		category:"",
+		answer:""
+	}
+
+
+
+
+
