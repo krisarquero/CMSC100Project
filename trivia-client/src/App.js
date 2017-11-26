@@ -7,8 +7,10 @@ import About from './components/About';
 import AddQuestion from './components/AddQuestion';
 import {
     Menu,
-  	Segment
+    Container,
+    Image
 } from "semantic-ui-react";
+import logoImage from './images/smarter-tita.png';
 import './App.css';
 
 class App extends Component {
@@ -29,18 +31,17 @@ class App extends Component {
     const { activeItem } = this.state
     return (
       <div id="main">
-        <div className="App-header">
+        <Container fluid >
+          <Image fluid src={ logoImage } />
 
-        </div>
+        </Container>
 
-        <Segment inverted>
-          <Menu inverted secondary>
-            <Menu.Item name='home' active={activeItem==='Home'} onClick={this.handleItemClick} />
-            <Menu.Item name='manage' active={activeItem === 'Manage'} onClick={this.handleItemClick} />
-            <Menu.Item name='high-scores' active={activeItem === 'HighScores'} onClick={this.handleItemClick} />
-            <Menu.Item name='about' active={activeItem === 'About'} onClick={this.handleItemClick} />
-          </Menu>
-        </Segment>
+        <Menu inverted color='red'>
+          <Menu.Item name='home' active={activeItem==='Home'} onClick={this.handleItemClick} />
+          <Menu.Item name='manage' active={activeItem === 'Manage'} onClick={this.handleItemClick} />
+          <Menu.Item name='high-scores' active={activeItem === 'HighScores'} onClick={this.handleItemClick} />
+          <Menu.Item name='about' active={activeItem === 'About'} onClick={this.handleItemClick} />
+        </Menu>
 
         <Router>
           <div id="content-container">

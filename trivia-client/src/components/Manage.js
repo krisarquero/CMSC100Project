@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './Manage.css'
 import {
-    Segment,
 		Button
 } from "semantic-ui-react";
 
@@ -25,11 +24,11 @@ class Manage extends Component {
 
 	render(){
 		return(
-      <Segment basic>
-        <Segment>
-          <Button fluid onClick={this.handleSearch}>Add Question</Button>
-        </Segment>
-      </Segment>
+
+      <div className="App-main">
+        <Button fluid onClick={this.handleSearch}>Add Question</Button>
+      </div>
+
 		)
 	}
 }
