@@ -5,6 +5,7 @@ import Manage from './components/Manage';
 import Scores from './components/Scores';
 import About from './components/About';
 import AddQuestion from './components/AddQuestion';
+import ViewQuestions from './components/ViewQuestions';
 import {
     Menu,
     Container,
@@ -50,6 +51,7 @@ class App extends Component {
             <Route exact={true} path="/high-scores" component={Scores}/>
             <Route exact={true} path="/about" component={About}/>
             <Route exact={true} path="/manage/add-question" component={AddQuestion}/>
+            <Route exact={true} path="/manage/view-questions" component={ViewQuestions}/>
           </div>
         </Router>
       </div>

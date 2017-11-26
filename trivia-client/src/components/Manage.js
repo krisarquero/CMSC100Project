@@ -12,45 +12,41 @@ class Manage extends Component {
 
 	constructor(props) {
 	   super(props);
-		this.handleSearch = this.handleSearch.bind(this);
+		this.handleItemClick = this.handleItemClick.bind(this);
 	}
 
-	  state = {
-	    category: '',
-	    submittedCategory: ''
-	  }
+	handleItemClick(e, { name }) {
+     this.setState({ activeItem: name})
+     window.location = '/manage/'+name;
+   }
 
-	  handleChange = (e, { name, value }) => this.setState({ [name]: value })
+	state = {
+	   category: '',
+	   submittedCategory: ''
+	}
 
-	  handleSubmit = () => {
-	    const { category } = this.state
+	handleChange = (e, { name, value }) => this.setState({ [name]: value })
 
-	    this.setState({
-	      submittedCategory: category
-	    })
-	  }
+	handleSubmit = () => {
+	  	const { category } = this.state
 
-	getInitialState() { return {query: ''} }
-
-	queryChange(evt) {
-     this.setState({query: evt.target.value});
-  	}
-
-	handleSearch() {
-    window.location = '/manage/add-question';
-  	}
+	   this.setState({
+	   	submittedCategory: category
+	   })
+	}
 
 	render(){
 		const { category, submittedCategory} = this.state
 		return(
 	      <div className="App-main">
 				<Container textAlign='center'>
-					<Button size='massive' onClick={this.handleSearch} inverted color='red'>Add Question</Button>
+					<Button size='massive' name='add-question' onClick={this.handleItemClick} inverted color='red'>Add Question</Button>
+					<Button size='massive' name='view-questions' onClick={this.handleItemClick} inverted color='red'>View Questions</Button>
 				</Container>
 				<Divider inverted horizontal>Or</Divider>
 				<Container textAlign='center'>
 					<Form onSubmit={this.handleSubmit}>
-	 	         	<Form.Input placeholder='Add your own Tita category.' name='category' value={category} onChange={this.handleChange} />
+	 	         	<Form.Input placeholder='Add your own smart Tita category.' name='category' value={category} onChange={this.handleChange} />
 					 	<Form.Button size='massive' content='Add Category' inverted color='red'/>
 	 	        	</Form>
 				</Container>
