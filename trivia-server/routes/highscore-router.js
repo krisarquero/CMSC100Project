@@ -8,5 +8,7 @@ const HighscoreController = require('../controllers/highscore-controller');
  * POST   /delete
  */
 
-router.get('/highscores/find-all', HighscoreController.findAll);
+router.get('/find-all', HighscoreController.findAll);
+router.get('/find-by-id/:_id', HighscoreController.findById);
+router.post('/add', HighscoreController.add);
 module.exports = router;
