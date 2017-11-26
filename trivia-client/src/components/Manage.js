@@ -1,34 +1,56 @@
 import React, { Component } from 'react';
 import './Manage.css'
 import {
-		Button
+	Form,
+	Button,
+	Divider,
+	Container
 } from "semantic-ui-react";
 
 
 class Manage extends Component {
 
 	constructor(props) {
-	    super(props);
-			this.handleSearch = this.handleSearch.bind(this);
+	   super(props);
+		this.handleItemClick = this.handleItemClick.bind(this);
 	}
 
-	getInitialState() { return {query: ''} }
+	handleItemClick(e, { name }) {
+     this.setState({ activeItem: name})
+     window.location = '/manage/'+name;
+   }
 
-	queryChange(evt) {
-     this.setState({query: evt.target.value});
-  }
+	state = {
+	   category: '',
+	   submittedCategory: ''
+	}
 
-	handleSearch() {
-    window.location = '/manage/add-question';
-  }
+	handleChange = (e, { name, value }) => this.setState({ [name]: value })
+
+	handleSubmit = () => {
+	  	const { category } = this.state
+
+	   this.setState({
+	   	submittedCategory: category
+	   })
+	}
 
 	render(){
+		const { category, submittedCategory} = this.state
 		return(
-
-      <div className="App-main">
-        <Button fluid onClick={this.handleSearch}>Add Question</Button>
-      </div>
-
+	      <div className="App-main">
+				<Container textAlign='center'>
+					<Button size='massive' name='add-question' onClick={this.handleItemClick} inverted color='red'>Add Question</Button>
+					<Button size='massive' name='view-questions' onClick={this.handleItemClick} inverted color='red'>View Questions</Button>
+				</Container>
+				<Divider inverted horizontal>Or</Divider>
+				<Container textAlign='center'>
+					<Form onSubmit={this.handleSubmit}>
+	 	         	<Form.Input placeholder='Add your own smart Tita category.' name='category' value={category} onChange={this.handleChange} />
+					 	<Form.Button size='massive' content='Add Category' inverted color='red'/>
+	 	        	</Form>
+				</Container>
+	    	</div>
 		)
 	}
 }
