@@ -1,29 +1,4 @@
-.homeContent{
 
-	width:500px;
-	height: 500px;
-	/*background-color: #000;*/
-	padding: 0;
-	position:absolute; /*it can be fixed too*/
-    left:0; right:0;
-    top:0; bottom:0;
-    margin:auto;
-
-        
-    max-width:100%;
-    max-height:100%;
-    overflow:auto;
-
-}
-
-#start{
-	margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
- 
-}
 
 #name{
 	width:250px;

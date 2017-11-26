@@ -28,11 +28,13 @@ class Home extends Component {
     	const { category, count, submittedCategory, submittedCount} = this.state
 		return(
 	      <div className="App-main">
-	        <Form onSubmit={this.handleSubmit}>
+	        <Form inverted onSubmit={this.handleSubmit}>
+				 <Form.Group widths="equal">
+                <Form.Input label="Category" placeholder='Category' name='category' value={category} onChange={this.handleChange} />
+                <Form.Input label="Number of Questions" placeholder='Number of Questions' name='count' value={count} onChange={this.handleChange} />
+				 </Form.Group>
 				 <Container textAlign='center'>
-                <Form.Input placeholder='Category' name='category' value={category} onChange={this.handleChange} />
-                <Form.Input placeholder='Number of Questions' name='count' value={count} onChange={this.handleChange} />
-				 	 <Form.Button inverted color='red' content='Start Quiz' />
+				 	<Form.Button inverted color='red' content='Start Game' size='big'/>
 				 </Container>
 	        </Form>
 	        <strong>onChange:</strong>

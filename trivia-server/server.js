@@ -28,6 +28,8 @@ require('./models/index');
 // Setup Routes
 const QuestionRouter = require('./routes/question-router');
 app.use('/api', QuestionRouter);
+const HighscoreRouter = require('./routes/highscore-router');
+app.use('/score', HighscoreRouter);
 
 // Homepage message
 app.get('/', (req, res) => {
