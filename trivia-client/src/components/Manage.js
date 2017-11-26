@@ -1,35 +1,64 @@
 import React, { Component } from 'react';
 import './Manage.css'
 import {
-    Segment,
-		Button
+	Form,
+	Button,
+	Divider,
+	Container
 } from "semantic-ui-react";
+const request = require('request');
 
 
 class Manage extends Component {
 
 	constructor(props) {
-	    super(props);
-			this.handleSearch = this.handleSearch.bind(this);
+	   super(props);
+		this.handleItemClick = this.handleItemClick.bind(this);
 	}
 
-	getInitialState() { return {query: ''} }
+	handleItemClick(e, { name }) {
+     this.setState({ activeItem: name})
+     window.location = '/manage/'+name;
+   }
 
-	queryChange(evt) {
-     this.setState({query: evt.target.value});
-  }
+	state = {
+	   name: '',
+	  //  submittedCategory: ''
+	}
 
-	handleSearch() {
-    window.location = '/manage/add-question';
+	handleChange = (e, { name, value }) => this.setState({ [name]: value })
+
+	handleSubmit = (e) => {
+    request.post('http://localhost:3001/trivia/category/add',{ form: e },(error, response, body) => { // change the one in request.body.<something> change this
+			console.log(e);
+			console.log(body);
+			console.log("Here");
+		});
   }
 
 	render(){
+		const { name} = this.state
 		return(
-      <Segment basic>
-        <Segment>
-          <Button fluid onClick={this.handleSearch}>Add Question</Button>
-        </Segment>
-      </Segment>
+	      <div className="App-main">
+
+				<Container textAlign='center'>
+					<Button size='huge' name='view-questions' onClick={this.handleItemClick} inverted color='red'>Update Questions</Button>
+				</Container>
+				<Divider inverted horizontal>Or</Divider>
+				<Container textAlign='center'>
+					<Button size='large' name='add-multiple-choice-question' onClick={this.handleItemClick} inverted color='red'>Add Multiple Choice Question</Button>
+					<Button size='large' name='add-no-choices-question' onClick={this.handleItemClick} inverted color='red'>Add Identification Question</Button>
+					<Button size='large' name='add-true-or-false-question' onClick={this.handleItemClick} inverted color='red'>Add True or False Question</Button>
+				</Container>
+				<Divider inverted horizontal>Or</Divider>
+				<Container textAlign='center'>
+					<Form onSubmit={() => this.handleSubmit(this.state)}>
+		       	<Form.Input className="add-cat" placeholder='Add your own smart Tita category.' name='name' value={name} onChange={this.handleChange} />
+					 	<Form.Button size='huge' content='Add Category' inverted color='red'/>
+	 	        	</Form>
+				</Container>
+
+	    	</div>
 		)
 	}
 }

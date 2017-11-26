@@ -28,6 +28,10 @@ require('./models/index');
 // Setup Routes
 const QuestionRouter = require('./routes/question-router');
 app.use('/trivia', QuestionRouter);
+const HighscoreRouter = require('./routes/highscore-router');
+app.use('/score', HighscoreRouter);
+const CategoryRouter = require('./routes/category-router');
+app.use('/trivia', CategoryRouter);
 
 // Homepage message
 app.get('/', (req, res) => {

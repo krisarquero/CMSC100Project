@@ -8,8 +8,8 @@ const QuestionController = require('../controllers/question-controller');
  * POST   /delete
  */
 
-router.get('/find-all', QuestionController.findAll);
-router.get('/find-by-id/:_id', QuestionController.findById);
-router.post('/add', QuestionController.add);
-router.post('/delete', QuestionController.delete);
+router.get('/questions/find-all', QuestionController.findAll);
+router.get('/questions/find-by-id/:_id', QuestionController.findById);
+router.post('/questions/add', QuestionController.add);
+router.post('/questions/delete', QuestionController.delete);
 module.exports = router;

@@ -14,26 +14,12 @@ class AddQuestion extends Component {
     category: '',
     choices: [],
     answer: ''
-    // submittedCategory: '',
-    // submittedType: '',
-    // submittedQuestion: '',
-    // submittedAnswer: '',
-    // submittedDifficulty: ''
   }
 
   handleChange = (e, { name, value }) => this.setState({ [name]: value })
 
   handleSubmit = (e) => {
-    // const { category, type, question, answer, difficulty } = this.state
-    //
-    // this.setState({
-    //   submittedCategory: category,
-    //   submittedType: type,
-    //   submittedQuestion: question,
-    //   submittedAnswer: answer,
-    //   submittedDifficulty: difficulty
-    // })
-    request.post('http://localhost:3001/trivia/add',{ form: e },(error, response, body) => { // change the one in request.body.<something> change this
+    request.post('http://localhost:3001/trivia/questions/add',{ form: e },(error, response, body) => { // change the one in request.body.<something> change this
 			console.log(e);
 			console.log(body);
 			console.log("Here");

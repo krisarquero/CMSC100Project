@@ -2,4 +2,4 @@
 
 require('./Question');
 require('./Category');
-require('./HighScores');
+require('./Highscore');

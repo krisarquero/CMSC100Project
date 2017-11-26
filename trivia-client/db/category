@@ -1,0 +1,14 @@
+db.category.insertMany([
+	{
+		name:"Adventure Time"
+	},
+	{
+		name:"Social Climbing 101"
+	},
+	{
+		name:"Sales and Discounts"
+	},
+	{
+		name:"Tita Life"
+	}
+])

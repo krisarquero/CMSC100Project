@@ -1,0 +1,18 @@
+db.highscore.insertMany([
+	{
+		name:"Elektra",
+		score:5,
+		categories:["Tita Life","Sales and Discount","Adventure Time"]
+	},
+	{
+		name:"Lei",
+		score:15,
+		categories:["Social Climbing 101","Sales and Discount","Adventure Time"]
+	},
+	{
+		name:"Kris",
+		score:18,
+		categories:["Adventure Time","Social Climbing 101","Tita Life"]
+	}
+
+])

@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Home from './components/Home';
+import MainGame from './components/MainGame';
 import Manage from './components/Manage';
 import Scores from './components/Scores';
 import About from './components/About';
-import AddQuestion from './components/AddQuestion';
+import AddMCQuestion from './components/AddMCQuestion';
+import AddNCQuestion from './components/AddNCQuestion';
+import AddTFQuestion from './components/AddTFQuestion';
+import ViewQuestions from './components/ViewQuestions';
 import {
     Menu,
     Container,
@@ -46,10 +50,14 @@ class App extends Component {
         <Router>
           <div id="content-container">
             <Route exact={true} path="/home" component={Home}/>
+            <Route exact={true} path="/main-game" component={MainGame}/>
             <Route exact={true} path="/manage" component={Manage}/>
             <Route exact={true} path="/high-scores" component={Scores}/>
             <Route exact={true} path="/about" component={About}/>
-            <Route exact={true} path="/manage/add-question" component={AddQuestion}/>
+            <Route exact={true} path="/manage/add-multiple-choice-question" component={AddMCQuestion}/>
+            <Route exact={true} path="/manage/add-no-choices-question" component={AddNCQuestion}/>
+            <Route exact={true} path="/manage/add-true-or-false-question" component={AddTFQuestion}/>
+            <Route exact={true} path="/manage/view-questions" component={ViewQuestions}/>
           </div>
         </Router>
       </div>
