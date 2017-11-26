@@ -5,7 +5,7 @@ import {
 	Container
 } from "semantic-ui-react";
 
-class AddQuestion extends Component {
+class AddNCQuestion extends Component {
 
   state = {
     category: '',
@@ -86,4 +86,4 @@ class AddQuestion extends Component {
 	}
 }
 
-export default AddQuestion;
+export default AddNCQuestion;
