@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import {
 	Form,
-   Radio,
-	Container
+   	Radio,
+	Container,
+	Header
 } from "semantic-ui-react";
 
 class AddNCQuestion extends Component {
@@ -38,12 +39,10 @@ class AddNCQuestion extends Component {
     	const { category, type, question, answer, difficulty, submittedCategory, submittedType, submittedQuestion, submittedAnswer, submittedDifficulty} = this.state
 		return(
 	      <div className="App-main">
-
-	        <Form onSubmit={this.handleSubmit}>
+	      	<Header id="header" as="h1" textAlign="center" size="huge"> Identification Question </Header>
+	      	<Container className="content">
+	        <Form inverted onSubmit={this.handleSubmit}>
 	          <Form.Group>
-	            <Form.Input placeholder='Category' name='category' value={category} onChange={this.handleChange} />
-	            <Form.Input placeholder='Type' name='type' value={type} onChange={this.handleChange} />
-
 	              <Form.Field>
 	                Level of Difficulty: <b>{this.state.value}</b>
 	              </Form.Field>
@@ -70,17 +69,27 @@ class AddNCQuestion extends Component {
 	              </Form.Field>
 
 	          </Form.Group>
-	          <Form.Input placeholder='Question' name='question' value={question} onChange={this.handleChange} />
-	          <Form.Input placeholder='Answer' name='answer' value={answer} onChange={this.handleChange} />
-				 <Container textAlign='center'>
+
+	          <Form.Group widths="equal">
+	          		<Form.Input label="Category" placeholder='Category' name='category' value={category} onChange={this.handleChange} />
+	            	<Form.Input label="Type" placeholder='Type' name='type' value={type} onChange={this.handleChange} />
+	          </Form.Group>
+
+
+	        
+	          <Form.Input placeholder='Question' label="Question" name='question' value={question} onChange={this.handleChange} />
+	          <Form.Input className="answer" label="Answer" placeholder='Answer'  name='answer' value={answer} onChange={this.handleChange} />			 
+
+	          	<Container textAlign='center'>
 				 	<Form.Button inverted color='red' content='Add Question' />
-				 </Container>
+				</Container>
 
 	        </Form>
 	        <strong>onChange:</strong>
 	        <pre>{JSON.stringify({ category, type, question, answer, difficulty }, null, 2)}</pre>
 	        <strong>onSubmit:</strong>
 	        <pre>{JSON.stringify({ submittedCategory, submittedType, submittedQuestion, submittedAnswer, submittedDifficulty }, null, 2)}</pre>
+	        </Container>
 	      </div>
 		)
 	}

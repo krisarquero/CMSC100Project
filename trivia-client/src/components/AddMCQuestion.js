@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import {
 	Form,
-   Radio,
-	Container
+   	Radio,
+	Container,
+	Header
 } from "semantic-ui-react";
+import "./Add.css";
 
 class AddMCQuestion extends Component {
 
@@ -38,14 +40,13 @@ class AddMCQuestion extends Component {
     	const { category, type, question, optionA, optionB, optionC, optionD, answer, difficulty, submittedCategory, submittedType, submittedQuestion, submittedAnswer, submittedDifficulty} = this.state
 		return(
 	      <div className="App-main">
-
-	        <Form onSubmit={this.handleSubmit}>
+	      	<Header id="header" as="h1" textAlign="center" size="huge"> Multiple Choice Question </Header>
+	      	<Container className="content">
+	        <Form inverted onSubmit={this.handleSubmit}>
 	          <Form.Group>
-	            <Form.Input placeholder='Category' name='category' value={category} onChange={this.handleChange} />
-	            <Form.Input placeholder='Type' name='type' value={type} onChange={this.handleChange} />
 
-	              <Form.Field>
-	                Level of Difficulty: <b>{this.state.value}</b>
+	          	<Form.Field label="Level of Difficulty">
+	               {this.state.value}
 	              </Form.Field>
 	              <Form.Field>
 	                <Radio
@@ -70,14 +71,18 @@ class AddMCQuestion extends Component {
 	              </Form.Field>
 
 	          </Form.Group>
-	          <Form.Input placeholder='Question' name='question' value={question} onChange={this.handleChange} />
+	          <Form.Group>
+	          	<Form.Input label="Category" placeholder='Category' name='category' value={category} onChange={this.handleChange} />
+	          	<Form.Input label="Type" placeholder='Type' name='type' value={type} onChange={this.handleChange} />
+	          </Form.Group>
+	          <Form.Input label="Question" placeholder='Question' name='question' value={question} onChange={this.handleChange} />
 				 <Form.Group widths='equal'>
-					 <Form.Input placeholder='Option A' name='optionA' value={optionA} onChange={this.handleChange} />
-					 <Form.Input placeholder='Option B' name='optionB' value={optionB} onChange={this.handleChange} />
-					 <Form.Input placeholder='Option C' name='optionC' value={optionC} onChange={this.handleChange} />
-					 <Form.Input placeholder='Option D' name='optionD' value={optionD} onChange={this.handleChange} />
+					 <Form.Input placeholder='Option A' label="option A" name='optionA' value={optionA} onChange={this.handleChange} />
+					 <Form.Input placeholder='Option B' label="option B" name='optionB' value={optionB} onChange={this.handleChange} />
+					 <Form.Input placeholder='Option C' label="option C" name='optionC' value={optionC} onChange={this.handleChange} />
+					 <Form.Input placeholder='Option D' label="option D" name='optionD' value={optionD} onChange={this.handleChange} />
 				 </Form.Group>
-	          <Form.Input placeholder='Answer' name='answer' value={answer} onChange={this.handleChange} />
+	          <Form.Input className="answer" label="Answer" placeholder='Answer'  name='answer' value={answer} onChange={this.handleChange} />
 				 <Container textAlign='center'>
 				 	<Form.Button inverted color='red' content='Add Question' />
 				 </Container>
@@ -87,6 +92,7 @@ class AddMCQuestion extends Component {
 	        <pre>{JSON.stringify({ category, type, question, answer, difficulty }, null, 2)}</pre>
 	        <strong>onSubmit:</strong>
 	        <pre>{JSON.stringify({ submittedCategory, submittedType, submittedQuestion, submittedAnswer, submittedDifficulty }, null, 2)}</pre>
+	        </Container>
 	      </div>
 		)
 	}
