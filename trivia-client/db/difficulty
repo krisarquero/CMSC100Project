@@ -1,0 +1,14 @@
+db.difficulty.insertMany([
+	{
+		level:"E",
+		score:1
+	},
+	{
+		level:"A",
+		score:3
+	},
+	{
+		level:"H",
+		score:8
+	}
+])
