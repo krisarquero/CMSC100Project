@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import {
 	Header,
 	Container,
-	List
+	List,
+	Table,
+	Divider
 } from 'semantic-ui-react'
 import "./Scores.css"
 
@@ -28,19 +30,20 @@ class Scores extends Component {
 		return(
 			<div className="scoreContainer">
 				<Header id="header" as='h1' textAlign="center" size="huge">Smartest Tita</Header>
-				 
-				 <Container>
-				 	<ol>
+				 <Divider />
+				 <Container id="list" textAlign="center">
+				 	<List animated verticalAlign size="huge">
 					{
 						this.state.highscores.map((highscore) => {
 							return(
-							<li key={highscore._id}>{highscore.name}</li>	
+							<List.Item  key={highscore._id}>{highscore.name} - {highscore.score}</List.Item>	
 							)
 						})
 					}
-					</ol>
+					</List>
 
-				 </Container>
+				</Container>
+				 
 			</div>
 		)
 	}

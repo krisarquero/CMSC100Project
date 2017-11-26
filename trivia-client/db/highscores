@@ -1,4 +1,4 @@
-db.highscore.insertMany([
+db.highscores.insertMany([
 	{
 		name:"Elektra",
 		score:5,

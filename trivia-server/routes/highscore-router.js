@@ -9,4 +9,6 @@ const HighscoreController = require('../controllers/highscore-controller');
  */
 
 router.get('/find-all', HighscoreController.findAll);
+router.get('/find-by-id/:_id', HighscoreController.findById);
+router.post('/add', HighscoreController.add);
 module.exports = router;
