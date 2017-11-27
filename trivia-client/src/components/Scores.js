@@ -36,14 +36,12 @@ class Scores extends Component {
 					{
 						this.state.highscores.map((highscore) => {
 							return(
-							<List.Item  key={highscore._id}>{highscore.name} - {highscore.score}</List.Item>	
+							<List.Item key={highscore._id}>{highscore.name} - {highscore.score}</List.Item>
 							)
 						})
 					}
 					</List>
-
 				</Container>
-				 
 			</div>
 		)
 	}

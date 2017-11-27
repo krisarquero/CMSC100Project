@@ -26,6 +26,7 @@ exports.findById = (req, res) => {
 
 exports.add = (req, res) => {
   const newCategory = new Category(req.body);
+  console.log(req.body);
 
   newCategory.save((err, category) => {
     if (err) { res.send({}); }
@@ -45,4 +46,18 @@ exports.delete = (req, res) => {
       res.send(true);
     }
   });
+}
+
+exports.edit = (req, res) => {
+  var query = { "name": req.body.oldCategory };
+  Category.findOneAndUpdate(query, { "name": req.body.newCategory }, function(err, doc){
+      if(err){
+          console.log("Something wrong when updating data!");
+          console.log(false);
+          res.send(false);
+      }
+      console.log(doc);
+      res.send(doc);
+  });
+
 }

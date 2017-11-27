@@ -34,7 +34,7 @@ class ViewQuestions extends Component {
 					{
 						this.state.questions.map((q) => {
 							return(
-								<li key={q._id}> <a href={'#'}>{q.question}</a> <button type="button" onClick={() => this.handleDelete(q._id)}>Delete</button></li>
+								<li key={q._id}> <a href={`/question/${q._id}`}>{q.question}</a> <button type="button" onClick={() => this.handleDelete(q._id)}>Delete</button></li>
 							)
 						})
 					}

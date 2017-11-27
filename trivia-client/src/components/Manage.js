@@ -12,7 +12,7 @@ const request = require('request');
 class Manage extends Component {
 
 	constructor(props) {
-	   super(props);
+	  super(props);
 		this.handleItemClick = this.handleItemClick.bind(this);
 	}
 
@@ -45,6 +45,7 @@ class Manage extends Component {
 
 				<Container textAlign='center'>
 					<Button size='huge' name='view-questions' onClick={this.handleItemClick} inverted color='red'>Update Questions</Button>
+					<Button size='huge' name='view-category' onClick={this.handleItemClick} inverted color='red'>Update Category</Button>
 				</Container>
 				<Divider inverted horizontal>Or</Divider>
 				<Container textAlign='center'>
@@ -57,7 +58,7 @@ class Manage extends Component {
 					<Form onSubmit={() => this.handleSubmit(this.state)}>
 		       	<Form.Input className="add-cat" placeholder='Add your own smart Tita category.' name='name' value={name} onChange={this.handleChange} />
 					 	<Form.Button size='huge' content='Add Category' inverted color='red'/>
-	 	        	</Form>
+	 	       </Form>
 				</Container>
 
 	    	</div>

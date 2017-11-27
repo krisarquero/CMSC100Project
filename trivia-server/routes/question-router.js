@@ -12,4 +12,6 @@ router.get('/questions/find-all', QuestionController.findAll);
 router.get('/questions/find-by-id/:_id', QuestionController.findById);
 router.post('/questions/add', QuestionController.add);
 router.post('/questions/delete', QuestionController.delete);
+router.post('/questions/edit', QuestionController.edit);
+router.post('/questions/game', QuestionController.selectQuestions);
 module.exports = router;

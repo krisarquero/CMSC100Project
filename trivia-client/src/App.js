@@ -9,6 +9,8 @@ import AddMCQuestion from './components/AddMCQuestion';
 import AddNCQuestion from './components/AddNCQuestion';
 import AddTFQuestion from './components/AddTFQuestion';
 import ViewQuestions from './components/ViewQuestions';
+import ViewCategory from './components/ViewCategory';
+import Question from './components/Question';
 import {
     Menu,
     Container,
@@ -50,7 +52,7 @@ class App extends Component {
         <Router>
           <div id="content-container">
             <Route exact={true} path="/home" component={Home}/>
-            <Route exact={true} path="/main-game" component={MainGame}/>
+            <Route exact={true} path="/main-game/:category/:count" component={MainGame}/>
             <Route exact={true} path="/manage" component={Manage}/>
             <Route exact={true} path="/high-scores" component={Scores}/>
             <Route exact={true} path="/about" component={About}/>
@@ -58,6 +60,8 @@ class App extends Component {
             <Route exact={true} path="/manage/add-no-choices-question" component={AddNCQuestion}/>
             <Route exact={true} path="/manage/add-true-or-false-question" component={AddTFQuestion}/>
             <Route exact={true} path="/manage/view-questions" component={ViewQuestions}/>
+            <Route exact={true} path="/manage/view-category" component={ViewCategory}/>
+            <Route exact={true} path="/question/:questionId" component={Question}/>
           </div>
         </Router>
       </div>
