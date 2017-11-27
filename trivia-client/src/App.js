@@ -54,6 +54,7 @@ class App extends Component {
             <Route exact={true} path="/" component={Home}/>
             <Route exact={true} path="/home" component={Home}/>
             <Route exact={true} path="/main-game/:category/:count" component={MainGame}/>
+            <Route exact={true} path="/main-game/:category1/:category2/:category3/:count" component={MainGame}/>
             <Route exact={true} path="/manage" component={Manage}/>
             <Route exact={true} path="/high-scores" component={Scores}/>
             <Route exact={true} path="/about" component={About}/>

@@ -6,7 +6,7 @@ exports.findAll = (req, res) => {
       console.log(err);
       res.send({});
     } else {
-      res.send(questions);
+      res.json(questions);
     }
   });
 }
@@ -19,7 +19,7 @@ exports.findById = (req, res) => {
       console.log(err);
       res.send({});
     } else {
-      res.send(question);
+      res.json(question);
     }
   });
 }
@@ -66,7 +66,7 @@ exports.selectQuestions = (req, res) => {
         count = count + 1;
       }
       console.log(trivia_questions);
-      res.send(trivia_questions);
+      res.json(trivia_questions.items);
   });
 }
 

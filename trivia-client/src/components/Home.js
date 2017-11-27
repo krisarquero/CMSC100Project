@@ -39,7 +39,7 @@ class Home extends Component {
 		// 		// console.log("Deleted");
 		// 		// window.location.reload();
 		// 		this.state.questions = body;
-					
+
 		// 		console.log(body);
 		// 		console.log(this.state.questions);
 		// 	}
