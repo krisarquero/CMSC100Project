@@ -1,5 +1,12 @@
 import React, { Component } from 'react';
 const request = require('request');
+import {
+	Header,
+	Container,
+	List,
+	Button
+} from 'semantic-ui-react'
+
 
 class ViewQuestions extends Component {
 
@@ -29,8 +36,9 @@ class ViewQuestions extends Component {
 	render(){
 		return(
 			<div className='App-main'>
-				<h2>Questions</h2>
-				<ol>
+				<Header id="header" as='h2' textAlign="center" size="huge">Edit Questions</Header>
+				<Container>
+				<List inverted divided verticalAlign='middle'>
 					{
 						this.state.questions.map((q) => {
 							return(
@@ -38,7 +46,8 @@ class ViewQuestions extends Component {
 							)
 						})
 					}
-				</ol>
+				</List>
+				</Container>
 			</div>
 		)
 	}

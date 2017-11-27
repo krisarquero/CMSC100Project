@@ -51,6 +51,7 @@ class App extends Component {
 
         <Router>
           <div id="content-container">
+            <Route exact={true} path="/" component={Home}/>
             <Route exact={true} path="/home" component={Home}/>
             <Route exact={true} path="/main-game/:category/:count" component={MainGame}/>
             <Route exact={true} path="/manage" component={Manage}/>

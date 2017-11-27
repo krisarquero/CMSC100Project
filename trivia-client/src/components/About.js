@@ -1,17 +1,50 @@
 import React, { Component } from 'react';
 import {
 	Header,
-	Container
-} from 'semantic-ui-react'
-import "./About.css"
+	Image,
+	Container,
+	Divider,
+	List
+} from 'semantic-ui-react';
+import "./About.css";
+import elektra from '../images/elektra.jpg';
+import kris from '../images/kris.jpg';
+import lei from '../images/lei.jpg';
+
+
 
 class About extends Component {
 	render(){
 		return(
 			<div className="aboutContainer">
 				 <Header id="header" as='h1' textAlign="center" size="huge">About</Header>
-				 <Container>
-				 	<p>orem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa strong. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede link mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.</p>
+
+				
+				 <Container id="abt" textAlign="center">
+				 	<p>Unleash the smart tita in you! This fun trivia game is specially made for all the titas out there. 
+				 	It will test your "TITA" level and if how smart are you as a tita. This trivia game is inspired by the game
+				 	"Are you smarter than a 5th grader" with a twist of tita lifestyle. </p>
+				 </Container>
+
+				 	 <Divider horizontal inverted>developed By the Comsci Titas of UPLB</Divider>
+				 	 <Container textAlign="center">
+				 	
+				 		<List horizontal relaxed>
+				 			<List.Item>
+		    				<Image spaced="right" size="small" circular src={ elektra } />
+		    					<Header color="red" inverted as="h4">Elektra Feir</Header>
+		    				</List.Item> 
+		    				<List.Item>
+		    					<Image size="small" circular src={ kris } />
+		    					<Header color="red" inverted as="h4">Kris Arquero</Header>
+		    				</List.Item>
+		    				<List.Item>
+		    				<Image size="small" circular src={ lei } />
+    							<Header color="red" inverted as="h4">Lei Vargas</Header>
+    						</List.Item>
+    					</List>
+
+  					
 				 </Container>
 			</div>
 		)

@@ -11,10 +11,10 @@ class AddNCQuestion extends Component {
 
   state = {
     category: '',
-    type: '',
+    type: 'TA',
     question: '',
     answer: '',
-    difficulty: 'A'
+    difficulty: ''
   }
 
   handleChange = (e, { name, value }) => this.setState({ [name]: value })
@@ -65,7 +65,7 @@ class AddNCQuestion extends Component {
 
 	          <Form.Group widths="equal">
 	          		<Form.Input label="Category" placeholder='Category' name='category' value={category} onChange={this.handleChange} />
-	            	<Form.Input label="Type" placeholder='Type' name='type' value={type} onChange={this.handleChange} />
+	            	<Form.Input label="Type" placeholder='Type' name='type' value="Text Answer" disabled />
 	          </Form.Group>
 
 
